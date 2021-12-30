@@ -11,11 +11,13 @@
             <StackPanel Orientation="Horizontal" Background="DeepPink">
                 <Button Name="ConnectBtn" Background="Transparent" Content="Connect" FontSize="19" Command="{Binding ConnectBtn}" Width="300" Height="30"></Button>
                 <Button Name="DisconnectBtn" Background="Transparent" Content="Disconnect" FontSize="19" Command="{Binding DisconnectBtn}" Width="300" Height="30"></Button>
-                <TextBox Name="UsernameTxtBox" Background="DeepPink" Foreground="White" FontSize="19" Width="190" Height="30"></TextBox>
+                
+                <TextBox Name="UsernameTxtBox" Background="White" BorderBrush="Black" BorderThickness="5" Foreground="White" FontSize="19" Width="190" Height="30"></TextBox>
             </StackPanel>
             <StackPanel>
-                <Image></Image>
+                
             </StackPanel>
+            <Button Command="{Binding SelectCommand}" Width="200" Height="40" Background="DeepPink" Content="Select File" FontSize="22" Margin="0,330,0,0"></Button>
         </StackPanel>
     </Grid>
 </Window>
